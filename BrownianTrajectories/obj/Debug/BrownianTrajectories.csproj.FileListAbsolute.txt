@@ -1,0 +1,12 @@
+C:\Users\NIKITOS\RiderProjects\BrownianTrajectories\BrownianTrajectories\obj\Debug\BrownianTrajectories.csprojAssemblyReference.cache
+C:\Users\NIKITOS\RiderProjects\BrownianTrajectories\BrownianTrajectories\obj\Debug\BrownianTrajectories.Properties.Resources.resources
+C:\Users\NIKITOS\RiderProjects\BrownianTrajectories\BrownianTrajectories\obj\Debug\BrownianTrajectories.csproj.GenerateResource.cache
+C:\Users\NIKITOS\RiderProjects\BrownianTrajectories\BrownianTrajectories\obj\Debug\BrownianTrajectories.csproj.CoreCompileInputs.cache
+C:\Users\NIKITOS\RiderProjects\BrownianTrajectories\BrownianTrajectories\bin\Debug\BrownianTrajectories.exe.config
+C:\Users\NIKITOS\RiderProjects\BrownianTrajectories\BrownianTrajectories\bin\Debug\BrownianTrajectories.exe
+C:\Users\NIKITOS\RiderProjects\BrownianTrajectories\BrownianTrajectories\bin\Debug\BrownianTrajectories.pdb
+C:\Users\NIKITOS\RiderProjects\BrownianTrajectories\BrownianTrajectories\obj\Debug\BrownianTrajectories.exe
+C:\Users\NIKITOS\RiderProjects\BrownianTrajectories\BrownianTrajectories\obj\Debug\BrownianTrajectories.pdb
+C:\Users\NIKITOS\RiderProjects\BrownianTrajectories\BrownianTrajectories\obj\Debug\BrownianTrajectories.MainForm.resources
+C:\Users\NIKITOS\RiderProjects\BrownianTrajectories\BrownianTrajectories\obj\Debug\BrownianTrajectories.MovementMenuForm.resources
+C:\Users\NIKITOS\RiderProjects\BrownianTrajectories\BrownianTrajectories\obj\Debug\BrownianTrajectories.MovementWindow.resources
