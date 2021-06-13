@@ -511,7 +511,7 @@ namespace BrownianTrajectories
             TargetBall = targetBall;
         }
 
-        public Ball MainBall { get; set; }
-        public Ball TargetBall { get; set; }
+        public Ball MainBall { get; }
+        public Ball TargetBall { get; }
     }
 }
