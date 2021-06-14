@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -9,21 +8,19 @@ namespace BrownianTrajectories
     public partial class MainForm : Form
     {
         private readonly List<Point> _coordinates = new List<Point>();
-        private Thread _buttonProcess;
         private readonly MovementWindow _movementWindow;
-        private bool _notStop;
-        private int _stepForT;
         private class Point
         {
-            private double _x;
-            private double _y;
-            private double _qu;
-            private double _offset;
+            private readonly double _x;
+            private readonly double _y;
+            private readonly double _qu;
+            private readonly double _offset;
             public Point(double x, double y, double qu, double offset)
             {
                 _x = x;
                 _y = y;
                 _qu = qu;
+                _offset = offset;
             }
 
             public double X => _x;
@@ -70,16 +67,16 @@ namespace BrownianTrajectories
             }
         }
 
-        private double CountCurrentDistance(Point current, Point previous)
+        private static double CountCurrentDistance(Point current, Point previous)
         {
-            return 100 * Math.Sqrt((current.X - previous.X) * (current.X - previous.X) +
+            return Math.Sqrt((current.X - previous.X) * (current.X - previous.X) +
                              (current.Y - previous.Y) * (current.Y - previous.Y));
         }
-        private double CountX(double offset, double qu)
+        private static double CountX(double offset, double qu)
         {
             return offset * Math.Cos(qu);
         }
-        private double CountY(double offset, double qu)
+        private static double CountY(double offset, double qu)
         {
             return offset * Math.Sin(qu);
         }
@@ -87,7 +84,7 @@ namespace BrownianTrajectories
         private double CountOffset(double previousOffset, double time, double iterations)
         {
             var eps = _random.NextDouble();
-            var normalDistribution = 1 / Math.Sqrt(2 * Math.PI) * Math.Exp((double)-(eps - 3) * (eps - 3) / 2);
+            var normalDistribution = 1 / Math.Sqrt(2 * Math.PI) * Math.Exp(-(eps - 3) * (eps - 3) / 2);
             var offset = previousOffset + Math.Sqrt(time / (2 * iterations)) * normalDistribution;
             return offset;
         }

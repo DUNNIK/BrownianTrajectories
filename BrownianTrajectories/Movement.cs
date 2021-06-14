@@ -31,7 +31,7 @@ namespace BrownianTrajectories
 
         public PictureBox TargetPictureBox { get; }
         private readonly Timer _timer;
-        private Size Size { get; set; }
+        private Size Size { get; }
         private Ball[] _balls;
         private double Area => Size.Width * Size.Height;
         public event EventHandler<BallTouchedSideArgs> BallTouchedSide;
